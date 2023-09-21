@@ -1,0 +1,1932 @@
+    body{
+        background-color: #F6F6F6;
+    }
+
+    #LogoHereText{
+        margin:auto;
+        color: black;
+    }
+
+    #UnlockWorld{
+        font-weight: bolder;
+        color: #31A0F2;
+    }
+
+    .hero-section {
+        background-image: url("../Images/VectorLiLst.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 60% 100%; 
+        position: relative;
+        top: 0;
+        width: 100%;         
+    }
+
+    ul #nav-link{
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+
+    .heading{
+        /* position: relative;
+        left: 65px;
+        width: 100%; */
+    }
+
+    .heading h1{
+        font-size: 63px;        
+    }
+
+    .heading p{
+        font-size: 17px;        
+    }
+
+    .heading #img1{
+        position: relative;
+        top: 30px;
+        left: -55px;
+    }
+
+    #img2{
+        display: none;
+    }
+    #Apple2{
+        display: none;
+    }
+    #And2{
+        display: none;
+    }
+
+    /* .heading .FindaneSIMPlan{
+        background-color: #31A0F2;
+        color: white;        
+    } */
+
+    .heading .FindaneSIMPlan {
+        background-color: #31A0F2;
+        color: white;
+        border: 2px solid #31A0F2;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .heading .FindaneSIMPlan::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, #F6F6F6 100%);
+        transition: left 0.3s ease-in-out;
+    }
+    
+    .heading .FindaneSIMPlan:hover {
+        background-color: white;
+        color: #31A0F2;
+        border-color: #31A0F2;
+    }
+    
+    .heading .FindaneSIMPlan:hover::before {
+        left: 0;
+    }
+    
+    
+
+    .vectapp{
+
+        position: relative;
+        top: -2px;
+        height: 27px;
+        left: -10px;
+
+    }
+    .esim_Img{
+        width: 80%;
+        position: relative;
+        right: -200px;
+    }
+    
+
+    /* pricing card text */
+    h5.card-title.text-white.fw-bold{
+        font-size: 35px;
+    }
+    #PricingCard{
+        border-radius: 20px;
+    }
+    h5.card-title.fw-bold {
+        font-size: 30px;
+    }
+    #cardTitle{
+        color: #31A0F2;
+    }
+
+    /* pricing card check box */
+    /* Custom radio checkbox */
+    .custom-radio {        
+        display: none; /* Hide the default radio input */
+    }
+
+    /* Style the custom radio indicator (the circle) */
+    .checkmark {
+        display: inline-block;
+        width: 15px; /* Size of the radio indicator (circle) */
+        height: 15px; /* Size of the radio indicator (circle) */
+        background-color: transparent; /* Set the background color */
+        border: 2px solid #31A0F2; /* Set the border color */
+        border-radius: 50%; /* Make it a circle */
+        cursor: pointer;
+    }
+
+    /* Style the custom radio indicator when selected */
+    .custom-radio:checked + .checkmark {
+        background-color: #31A0F2; /* Set the background color when selected */
+    }
+
+    /* .Pricing_Btn{
+        background-color: #31A0F2;
+        color: white;
+        padding: 10px 20px;
+        font-size: 15px;
+        border: none;
+        position: relative;
+        top: 20px;
+    } */
+
+
+    .Pricing_Btn {
+        background-color: #31A0F2;
+        color: white;
+        border: 1px solid #31A0F2;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+        padding: 10px 20px;
+        font-size: 15px;
+        border: none;    
+        position: relative;
+        top: 20px;
+        overflow: hidden;
+    }
+    
+    .Pricing_Btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, #F6F6F6 100%);
+        transition: left 0.3s ease-in-out;
+    }
+    
+    .Pricing_Btn:hover {
+        background-color: white;
+        color: #31A0F2;
+        border-color: #31A0F2;
+        /* border: 1px solid #31A0F2; */
+        border: 1px solid #31A0F2;
+    }
+    
+    .Pricing_Btn:hover::before {
+        left: 0;
+    }
+
+
+    .PricingSection{
+        margin-bottom: 100px;
+    }
+
+    .travellingSection{
+        margin-bottom: 100px;
+    }
+
+    .travellingMainContent{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .travellingMainContent h1{
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 63.8px;
+    } 
+
+    .travellingMainContent p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22.5px;    
+    }
+
+
+    /* select options */
+    
+    /* Custom select */
+    .custom-select {
+        width: 100%;
+        height: 100%;
+        appearance: none;
+        border: none;
+        background: transparent;
+        padding-left: 15%;
+        font-size: 16px;
+        outline: none;
+    }
+
+    /* 1 Start custom select with image left side and right side */
+    .custom-select-container {        
+        width: 350px;
+        height: 72px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Image on the Right */
+    .custom-select-container::before {
+        content: "";
+        background-image: url("../Images/BottomArrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        width: 15%; 
+        height: 15%;
+    }
+
+    /* Image on the Left */
+    .custom-select-container::after{
+        content: "";
+        background-image: url("../Images/destination.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 23%;
+        left: 0;
+        width: 15%;
+        height: 50%;
+    }
+
+    /* 1 End custom select with image left side and right side */
+
+
+    /* 2 Start custom select with image left side and right side */
+    .custom-select-container2 {        
+        width: 350px;
+        height: 72px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Image on the right */
+    .custom-select-container2::before {
+        content: "";
+        background-image: url("../Images/BottomArrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        width: 15%; 
+        height: 15%;
+    }
+
+    /* Image on the left */
+    .custom-select-container2::after{
+        content: "";
+        background-image: url("../Images/aravel.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 23%;
+        left: 0;
+        width: 15%;
+        height: 50%;
+    }
+    /* 2 End custom select with image left side and right side */
+
+    /* 3 Start custom select with image left side and right side */
+
+    #SelectRow{
+        display: flex;
+    }
+
+    .custom-select-container3 {        
+        width: 350px;
+        height: 72px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Image on the right */
+    .custom-select-container3::before {
+        content: "";
+        background-image: url("../Images/BottomArrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        width: 15%; 
+        height: 15%;
+    }
+
+    /* Image on the left */
+    .custom-select-container3::after{
+        content: "";
+        background-image: url("../Images/Quantity.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 23%;
+        left: 0;
+        width: 15%;
+        height: 50%;
+    }
+    /* 3 Start custom select with image left side and right side */
+
+
+    .tarvelling_Btn{        
+        height: 72px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0px 40px;
+        font-size: 20px;
+    }
+
+    .tarvelling_Btn:hover{ 
+        background: none;
+        color: black;
+        border: 1px solid black;
+    }
+
+
+    /* .mainStayConnected{
+        width: 714px;
+        height: 106px;
+        margin: auto;
+    } */
+
+    .StayConnected{
+        margin-bottom: 100px;
+    }
+
+    .mainStayConnected h1{
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 77px;
+        text-align: center;
+    }
+
+    .StayConnectedCard{
+        margin-top: 100px;
+
+    }
+
+    .cardImg{
+
+        background-image: url("../Images/Rectangle9791.png");
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* #connectedCard{
+        border-radius: 20px;
+        border: none;
+        background-color: #F6F6F6;
+    } */
+
+    #connectedCard {
+        position: relative;
+        border-radius: 22px;
+    }
+    
+    #connectedCard::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(180deg, rgba(52, 164, 246, 0) 0%, #34A4F6 97.53%);        
+        border-radius: 22px;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        
+    }
+    
+    #connectedCard:hover::before {
+        opacity: 1;        
+    }
+    
+
+    
+    /* #connectedCard:hover{
+        border-radius: 20px;        
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        border: 2px solid #34A4F6;
+        border-image-source: linear-gradient(180deg, rgba(52, 164, 246, 0) 0%, #34A4F6 97.53%);
+        border-style: solid;       
+    } */
+    
+
+
+
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 2px solid;
+        border-image-source: linear-gradient(180deg, rgba(52, 164, 246, 0) 0%, #34A4F6 97.53%);
+        border-image-slice: 1;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 20px; */
+
+    #ConnectedTitle{
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 34px;
+    }
+
+    #Connected_Para{
+        font-size: 15px;
+    }
+
+    .NoSim{
+        /* height: 80vh; */
+        background-image: url("../Images/Section5Img.png");
+        background-repeat: no-repeat;
+        background-size: cover;    
+        color: white;
+        margin-bottom: 100px;
+    }
+
+    #NoSimImg{
+        width: 755px; 
+        position: relative;
+        top: 67px;
+    }
+
+    .NosimHeading h1{        
+        font-size: 58px;
+        font-weight: 900;
+        line-height: 77px;
+        margin-top: 30px;
+    }
+
+    .NosimPara p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;    
+        margin-bottom: 30px;
+    }
+    
+    .NoSimList{
+        margin-bottom: 30px;
+    }
+
+    /* .NoSimButton button{
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: white;
+        color: #31A0F2;
+        border: none;
+        border-radius: 10px;
+    } */
+
+
+    .NoSimButton button {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: white;
+        color: #31A0F2;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+    
+    .NoSimButton button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, #ffffff 100%);
+        transition: left 0.3s ease-in-out;
+    }
+    
+    .NoSimButton button:hover {
+        background-color: transparent;
+        color: white;
+        /* border: 1px solid #31A0F2; */
+    }
+    
+    .NoSimButton button:hover::before {
+        left: 0;
+    }
+    
+    
+    .Fastdata{    
+        margin-bottom: 100px;
+    }
+
+    #FastDataH1{
+        color: black;
+    }
+
+    #FastData_para{
+        color: black;
+    }
+
+    .FastDataImg img{
+        position: relative;
+        left: -15px;
+        width: 100%;
+    }
+
+    #FastDataColumn2{
+        display: none !important;
+    }
+
+    .heading h1{
+
+        font-weight: 900;
+        font-size: 58px;
+        line-height: 77px;
+
+        margin-bottom: 40px;
+
+    }
+
+    .FastDatapara p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .SocialMediaIcon{
+        margin-bottom: 40px;
+    }
+
+    .SocialMediaIcon p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .SocmediaIconsText{
+        position: relative;
+        top: 2px;
+    }
+
+    #OfferCardtitle{
+        font-size: 30px;
+        font-weight: 900;    
+        color: #31A0F2;
+    }
+
+    /* #OfferCard{
+        background-color: #F6F6F6;
+        border-radius: 10px;
+    }
+
+    #OfferCard:hover{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    } */
+
+
+    #OfferCard {
+        position: relative;
+        border-radius: 22px;
+    }
+    
+    #OfferCard::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(180deg, rgba(52, 164, 246, 0) 0%, #34A4F6 97.53%);        
+        border-radius: 22px;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        
+    }
+    
+    #OfferCard:hover::before {
+        opacity: 1;        
+    }
+
+    #Goli{
+        background-color: #31A0F2;
+        /* height: 40vh; */
+        border-radius: 22px;
+        background-image: url("../Images/Gounlimited.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+        margin: auto;
+        color: white;
+        margin-bottom: 100px;
+    }
+
+    .GoHeading h1{
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .GoPara p{
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    .GoButton{        
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    /* .GoButton button{
+        padding: 10px 20px;
+        font-size: 18px;
+        line-height: 22.5px;
+        background: none;
+        border:1px solid white;
+        border-radius: 8px;
+        color: white;
+    } */
+
+    .GoButton button {
+        padding: 10px 20px;
+        font-size: 18px;
+        line-height: 22.5px;
+        background: none;
+        border: 1px solid white;
+        border-radius: 8px;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+    
+    .GoButton button:hover {
+        background: linear-gradient(to left,  white 0%, transparent 100%);
+        color: #31A0F2;
+        border-color: #3586bf;
+    }
+    
+    #LoginSignup{
+        justify-content: space-evenly;
+        position: relative;
+        top: 23px;
+    }
+
+    #loginBtn{
+        margin-left: 10px;
+    }
+
+
+
+    /* Custom Scroll bar Start */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #F6F6F6;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #31A0F2;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #236fa5;
+    }
+    /* Custom Scroll bar End */
+
+    
+
+    /* Tablet Side responsive design Start */
+
+
+    /* Navigation bar start */
+
+    @media (max-width: 1200px){
+
+        ul #nav-link {
+            font-size: 15px !important;
+            font-weight: 900 !important;
+        }
+    }
+
+    @media (max-width: 1025px){
+
+        ul #nav-link {
+            font-size: 13px !important;
+            font-weight: 900 !important;
+        }
+
+    }
+
+    @media (max-width: 992px){
+
+        ul #nav-link {
+            color: black;
+        }
+
+    }
+
+    @media (max-width: 786px){
+        button#signup {
+            font-size: 15px;
+        }
+        
+        #Login img{
+            width: 35px;
+            height: 36px;
+            position: relative;
+            top: 2px;
+            left: 4px; 
+        }
+    }
+    
+
+    @media (max-width: 550px){
+
+        /* #LogoHereText b{
+            font-size: 21px;
+        } */
+
+        #LogoHereText b{
+            position: relative;
+            top: 7px;
+        }
+        
+        
+        button.navbar-toggler {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 393px){
+
+        /* #LogoHereText b{
+            font-size: 21px;
+        } */
+        
+        #LogoHereText b{
+            position: relative;
+            top: 7px;
+        }
+
+        #Login img{
+            width: 27px;
+            height: 28px;
+            position: relative;
+            top: 6px;
+            left: 4px; 
+        }
+
+        /* width: 27px;
+        height: 28px;
+        position: relative;
+        top: 6px;
+        left: 4px; */
+
+        button#signup {
+            font-size: 11px;
+        }
+
+        button.navbar-toggler {
+            display: none;
+        }
+
+    }
+
+    
+    /* @media (max-width: 460px){
+
+        #LogoHereText b{
+            font-size: 19px;
+        }
+        #signup{
+
+        }
+
+    } */
+
+    /* Navigation bar end */
+
+    
+
+    /* Hero Section Start */
+
+    @media (max-width: 1264px){
+        .esim_Img {
+            width: 80%;
+            position: relative;
+            right: -87px;
+        }
+    }
+
+    @media (max-width: 1221px){
+
+        .hero-section {
+            background-image: url("../Images/VectorLiLst.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 60% 100%;
+            position: relative;
+            top: 0;
+            width: 100%;            
+        }
+
+        .heading h1 {
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+
+        .heading p {
+            font-size: 20px;
+        }
+
+        .heading .FindaneSIMPlan {
+            font-size: 20px;
+        }
+
+        .esim_Img {
+            width: 80%;
+            position: relative;
+            right: -100px;
+        }
+
+    }
+
+    @media (max-width: 1200px){
+
+        .heading #img1 {
+            position: relative;
+            top: 1px;
+            left: -64px;
+        }
+
+        .heading h1 {
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 10px;
+            margin-bottom: 40px;
+        }
+
+        .heading p {
+            font-size: 18px;
+        }
+
+        .esim_Img {
+            width: 90%;
+            position: relative;
+            right: -60px;
+        }
+
+    }
+
+    @media (max-width: 1035px){
+
+        .heading #img1 {
+            position: relative;
+            top: -5px;
+            left: -44px;
+        }
+
+    }
+
+    @media (max-width: 987px){
+
+        .heading #img1 {
+            position: relative;
+            top: 0px;
+            left: -60px;
+        }
+
+        .heading h1 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 10px;
+            margin-bottom: 40px;
+        }
+
+        .esim_Img {            
+            width: 100%;
+            position: relative;
+            right: -100px;
+            top: 80px;
+        }
+
+    }
+
+    @media (max-width: 992px){
+
+        .heading #img1 {
+            position: relative;
+            top: 13px;
+            left: -70px;
+        }
+
+        .heading h1 {
+            font-weight: 900;
+            font-size: 27px !important;
+            line-height: 2 !important;
+            margin-bottom: 0px !important;
+        }
+
+        #Instant_Activation{
+            position: relative;
+            top: 15px;
+        }
+
+    }
+
+    @media (max-width: 900px){
+        .esim_Img {
+            width: 100%;
+            position: relative;
+            right: -55px;
+            top: 42px;
+        }
+    }
+
+    @media (max-width: 864px){
+
+        .hero-section {
+            background-image: url("../Images/VectorLiLst.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 60% 100%;
+            position: relative;
+            top: 0;
+            width: 100%;            
+        }
+
+        .heading #img1 {
+            position: relative;
+            top: 0px;
+            left: -60px;
+        }
+
+        .heading h1 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 10px;
+            margin-bottom: 40px;
+        }
+
+        .esim_Img {                        
+            width: 95%;
+            position: relative;
+            right: -61px;
+            top: 60px;
+        }
+
+    }
+    
+    /* Hero Section End */
+
+    /* travelling Section Start */
+    @media (max-width: 1400px){
+        .custom-select-container {
+            width: 300px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container2 {
+            width: 300px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container3 {
+            width: 300px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+    }
+
+    
+    @media (max-width: 1227px){
+        .travellingMainContent h1 {
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 63.8px;
+        }
+    }
+
+    @media (max-width: 1200px){
+        .custom-select-container {
+            width: 250px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container2 {
+            width: 250px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container3 {
+            width: 250px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 25px;
+            font-size: 20px;
+        }
+
+    }
+
+    @media (max-width: 992px){
+
+        .travellingMainContent h1 {
+            font-weight: 900;
+            font-size: 45px;
+            line-height: 63.8px;
+        }
+
+        .custom-select-container {
+            width: 190px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container::after {
+            content: "";
+            background-image: url("../Images/destination.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 23%;
+            left: 3px;
+            width: 13%;
+            height: 50%;
+        }
+
+        .custom-select-container::before {
+            content: "";
+            background-image: url("../Images/BottomArrow.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 46%;
+            right: 0;
+            width: 18%;
+            height: 13%;
+        }
+
+        .custom-select-container2 {
+            width: 190px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container2::after {
+            content: "";
+            background-image: url("../Images/aravel.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 23%;
+            left: 3px;
+            width: 13%;
+            height: 50%;
+        }
+
+        .custom-select-container2::before {
+            content: "";
+            background-image: url("../Images/BottomArrow.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 46%;
+            right: 0;
+            width: 18%;
+            height: 13%;
+        }
+
+        .custom-select-container3 {
+            width: 190px;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-select-container3::after {
+            content: "";
+            background-image: url("../Images/Quantity.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 23%;
+            left: 3px;
+            width: 13%;
+            height: 50%;
+        }
+
+        .custom-select-container3::before {
+            content: "";
+            background-image: url("../Images/BottomArrow.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 46%;
+            right: 0;
+            width: 18%;
+            height: 13%;
+        }
+
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 10px;
+            font-size: 18px;
+        }
+
+    }
+    /* travelling Section End */
+
+
+    /* StayConnected Section Start */
+    @media (max-width: 1400px){
+
+        .mainStayConnected h1 {
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 77px;
+            text-align: center;
+        }
+
+        #ConnectedTitle {
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 34px;
+        }
+
+
+    }
+
+    @media (max-width: 992px){
+
+        .mainStayConnected h1 {
+            font-weight: 800;
+            font-size: 33px;
+            line-height: 77px;
+            text-align: center;
+        }
+
+        #ConnectedTitle {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 34px;
+        }
+
+
+    }
+
+    @media (max-width: 505px){
+        .mainStayConnected h1 {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 77px;
+            text-align: center;
+        }
+
+    }
+
+    @media (max-width: 461px){
+        .mainStayConnected h1 {
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 77px;
+            text-align: center;
+        }
+
+    }
+
+    
+
+    
+    /* StayConnected Section End */
+
+    /* NoSim Start */
+    
+    @media (max-width: 1521px){
+        #NoSimImg {
+            width: 700px;
+            position: relative;
+            top: 67px;
+        }
+    }
+    @media (max-width: 1434px){
+        #NoSimImg{
+            width: 709px;
+            position: relative;
+            top: 106px;
+        }
+    }
+
+    @media (max-width: 1423px){
+        #NoSimImg{
+            width: 100%;
+            position: relative;
+            top: 155px;
+        }
+    }
+
+    @media (max-width: 1400px){
+        .NosimHeading h1 {
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 77px;
+            margin-top: 30px;
+        }
+
+        #NoSimImg {
+            width: 100%;
+            position: relative;
+            top: 115px;
+            height: 524px;
+            right: 110px;
+        }
+    }
+
+    @media (max-width: 1200px){
+        .NosimHeading h1 {
+            font-size: 25px;
+            font-weight: 900;
+            line-height: 1;
+            margin-top: 30px;
+        }
+
+        .NosimPara p {
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        #NoSimImg {
+            width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 38px;
+        }
+    }
+
+    @media (max-width: 892px){
+        
+        #NoSimImg {
+            width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 38px;
+        }
+
+    }
+
+    @media (max-width: 577px) {
+        /* #NoSimImg {
+            width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 30%;
+        } */
+
+        #NoSimImg {
+            width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 0;
+        }
+
+    }
+
+    @media (max-width: 575px) {
+        #NoSimImg {
+            /* width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 30%; */
+
+            width: 451px;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 0;
+
+        }
+
+    }
+
+    @media (max-width: 556px) {
+        /* .NoSim {         
+            background-image: url(Section5Img.png);
+            background-repeat: no-repeat;
+            color: white;
+            margin-bottom: 100px;
+            background-position: top center;
+            background-size: 100% 75%;
+        }
+
+        #NoSimImg {
+            width: 445px;
+            position: relative;
+            top: 7px;
+            height: 697px;
+            right: 0;
+            left: 0;
+        } */
+
+        #NoSimImg {
+            /* width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 30%; */
+            width: 451px;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 0;
+        }
+
+        #FastDataH1 {
+            text-align: start;
+        }
+
+        #FastData_para {
+            color: black;
+            text-align: start;
+        }
+
+        #SocialMediaColumn {
+            padding-left: 3%;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        #NoSimImg {
+            /* width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 30%; */
+            width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: 30%;
+        }
+    }
+    
+    
+
+    
+    /* NoSim End */
+
+
+    /* FastData Section Start */
+    @media (max-width: 1323px){
+        .heading h1 {
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 77px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 1149px){
+        .heading h1 {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 77px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 1044px){
+        #OfferCardtitle {
+            font-size: 25px;
+            font-weight: 900;
+        }
+    }
+
+    @media (max-width: 991px){
+
+    }
+
+    @media (max-width: 992px){
+        .FastDataImg img {
+            position: relative;
+            left: 0px;
+            width: 100%;
+        }
+        #FastRow{
+
+            display: block;
+
+        }
+
+        #columnWidth{
+            width: 100%;
+            /* text-align: center; */
+        }
+
+        #FastDataH1 {
+            /* font-weight: 900;
+            font-size: 40px;
+            line-height: 77px;
+            margin-bottom: 40px; */
+            text-align: center;
+        }
+
+        .FastDatapara p {
+            /* font-size: 18px; */
+            text-align: center;
+        }
+
+        #SocialMediaColumn{
+            padding-left: 15%;
+        }
+
+        #FastDataColumn2{
+            display: block !important;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        #FastDataColumn1{
+            display: none !important;
+        }
+
+
+    }
+    /* FastData Section End */
+
+    /* GoUnlimited Section Start */
+    @media (max-width: 1227px) { 
+
+        .GoHeading h1 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+    }
+    /* GoUnlimited Section End */
+
+    /* Tablet Side responsive design End */
+
+
+    /* Mobile Side responsive design Start */
+
+
+    /* Hero Section Start */
+    @media (max-width: 768px) {   
+        .hero-section {
+            background-image: url("../Images/VectorLiLst3.png");
+            background-repeat: no-repeat;            
+            background-size:cover;
+            position: relative;
+            top: 0;
+            width: 100%;            
+        }
+
+        #LogoHereText{
+            color: white;
+        }
+
+        .heading h1 {
+            font-weight: 700;
+            color: white;
+        }
+
+        .heading p {
+            font-size: 13px;
+            color: white;
+        }
+        
+        #UnlockWorld{
+            font-weight: bolder;
+            color: white;
+        }
+
+        #img2{
+            display: block;
+            position: relative;
+            top: 20px;
+            left: -55px;
+            width: 80px;
+        }
+        #img1{
+            display: none;
+        }
+        
+        #Apple2{
+            display: block;
+        }
+        #Apple1{
+            display: none;
+        }
+
+        #And2{
+            display: block;
+        }
+        #And1{
+            display: none;
+        }
+
+        #Instant_Activation {
+            position: relative;
+            top: 0;
+        }
+    }
+
+    
+
+    @media (max-width: 619px) {
+        #img2 {
+            display: block;
+            position: relative;
+            top: 20px;
+            left: -30px;
+            width: 65px;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .esim_Img {
+            width: 100%;
+            position: relative;
+            right: -6px;
+            top: 0;
+        }
+
+        #img2 {
+            display: block;
+            position: relative;
+            top: 8px;
+            left: -16px;
+            width: 53px;
+        }    
+
+    }
+    /* Hero Section End */
+
+    
+    /* travelling Section Start */
+    @media (max-width: 768px) {
+
+        #SelectRow{
+            display: block;
+        }
+
+        .custom-select-container {
+            width: 100%;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .custom-select-container2 {
+            width: 100%;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .custom-select-container3 {
+            width: 100%;
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 100px;
+            margin: auto;
+            display: block;
+            font-size: 25px;
+        }
+
+    }
+
+    
+    @media (max-width: 353px){
+
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 60px;
+            margin: auto;
+            display: block;
+            font-size: 25px;
+        }
+    }
+
+    @media (max-width: 347px){
+        .travellingMainContent h1 {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 63.8px;
+        }
+
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 80px;
+            margin: auto;
+            display: block;
+            font-size: 25px;
+        }
+
+    }
+    
+    @media (max-width: 313px){
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 52px;
+            margin: auto;
+            display: block;
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 311px){
+        .travellingMainContent h1 {
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 63.8px;
+        }
+
+        .tarvelling_Btn {
+            height: 72px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0px 40px;
+            margin: auto;
+            display: block;
+            font-size: 25px;
+        }
+
+    }
+
+    /* travelling Section End */
+    
+
+    /* NoSim Section Start */
+    @media (max-width: 350px){
+        .NosimHeading h1 {
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 1;
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 501px){
+        #NoSimImg {
+            width: 100%;
+            position: relative;
+            top: 80px;
+            height: 697px;
+            right: 0;
+            left: -40px;
+        }
+    }
+    
+    /* NoSim Section End */
+
+    /* FastData Section Start */
+
+    @media (max-width: 768px){
+        #SocialMediaColumn {
+            padding-left: 3%;
+        }
+        #FastDataH1 {
+            text-align: start;
+        }
+        #FastData_para {
+            text-align: start;
+        }
+    }
+
+    /* FastData Section End */
+
+    /* GoUnlimited Section Start */
+    
+    @media (max-width: 446px){
+
+        .GoHeading h1 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 396px){
+
+        .GoHeading h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    
+    
+    
+    /* GoUnlimited Section End */
+
+
+    /* I am check this bootstrap 5 css content it will apply for chaning the col-sm-6 min to max under 576px */
+    @media (max-width: 576px){
+        .col-sm-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+        /*.col-sm-7 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+        .col-sm-8 {
+            flex: 0 0 auto;
+            width: 50%;
+        } */
+
+        /* .row>* {
+            flex-shrink: 0;
+            width: 50%;
+            max-width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-top: var(--bs-gutter-y);
+        } */
+    }
+
+    /* I am check this bootstrap 5 css content it will apply for chaning the col-sm-6 min to max under 576px */
+    /* @media (max-width: 576px){
+        .col-sm-7 {
+            flex: 0 0 auto;
+            width: 58.33333333%;
+        }
+    } */
+
+
+    @media (max-width: 576px){
+
+        /* #Col1 {
+            flex: 0 0 auto;
+            width: 40.333333%;            
+        }
+        #Col2{
+            flex: 0 0 auto;
+            width: 50.333333%;
+        } */
+
+
+
+        /* .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+            display: flex;
+            flex-wrap: initial;
+            align-items: center;
+            justify-content: center;
+        } */
+    }
+    
+
+    /* @media (max-width: 768px){
+        .col-md-8 {
+            flex: 0 0 auto;
+            width: 66.66666667%;
+        }
+    }
+  */
+
+    /* Mobile Side responsive design End */
