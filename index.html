@@ -9,6 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Assets/Css/main.css">
 
+    <!-- DatePiker CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 </head>
 <body>
     
@@ -342,15 +346,20 @@
                             <option value="option2">Destination 2</option>
                             <option value="option3">Destination 3</option>
                         </select>
-                    </div>                
+                    </div>                           
 
                     <div class="custom-select-container2">
-                        <select class="custom-select">
+                        <!-- <select class="custom-select">
                             <option value="option1">Arrival & Departure</option>
                             <option value="option2">Arrival & Departure 2</option>
                             <option value="option3">Arrival & Departure 3</option>
-                        </select>
+                        </select> -->                        
+                            <input class="custom-select" type="text" id="date-range" placeholder="Arrival & Departure">                        
                     </div>
+
+                    <!-- <div class="date-range-picker">
+                        <input type="text" id="date-range" placeholder="Select Date Range">
+                    </div> -->
 
                     <div class="custom-select-container3">
                         <select class="custom-select">
@@ -798,6 +807,27 @@
             LogoHereText.style.color = 'black'
         }
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const dateRangeInput = document.getElementById('date-range');
+
+    // Initialize Flatpickr date range picker
+    const datePicker = flatpickr(dateRangeInput, {
+            mode: 'range', // Allows selecting a date range
+            dateFormat: 'Y-m-d', // Format for selected dates
+            onClose: function (selectedDates) {
+                // Handle date selection
+                if (selectedDates.length === 2) {
+                    const fromDate = selectedDates[0].toLocaleDateString();
+                    const toDate = selectedDates[1].toLocaleDateString();
+                    dateRangeInput.value = `${fromDate} - ${toDate}`;
+                } else {
+                    dateRangeInput.value = '';
+                }
+            }
+        });
+    });
+
 
   </script>
 
